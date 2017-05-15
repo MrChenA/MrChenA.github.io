@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CryptoLock Stopping Ransomware Attacks on User Data]]></title>
+    <url>%2F2017%2F05%2F15%2FCryptoLock-Stopping-Ransomware-Attacks-on-User-Data%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[SMS-短信加密程序]]></title>
     <url>%2F2017%2F05%2F14%2FSMS-%E7%9F%AD%E4%BF%A1%E5%8A%A0%E5%AF%86%E7%A8%8B%E5%BA%8F%2F</url>
-    <content type="text"><![CDATA[目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播 2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限Mainfest文件中有几个activity就要加几个activity节点]]></content>
+    <content type="text"><![CDATA[目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播 2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限Mainfest文件中有几个activity就要加几个activity节点 1、甲方构建密钥对（公钥和私钥，公钥给对方，私钥留给自己） 2、甲方使用私钥加密数据，然后用私钥对加密后的数据签名，并把这些发送给乙方；乙方使用公钥、签名来验证待解密数据是否有效，如果有效使用公钥对数据解密。 3、乙方使用公钥加密数据，向甲方发送经过加密后的数据；甲方获得加密数据，通过私钥解密。]]></content>
       <tags>
         <tag>tech</tag>
       </tags>

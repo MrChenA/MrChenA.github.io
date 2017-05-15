@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/14/SMS-短信加密程序/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
 <meta property="og:description" content="目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播  2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限M">
-<meta property="og:updated_time" content="2017-05-14T16:03:16.239Z">
+<meta property="og:updated_time" content="2017-05-15T02:32:40.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SMS-短信加密程序">
 <meta name="twitter:description" content="目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播  2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限M">
@@ -392,7 +392,12 @@
 <p>3、在Activity中注册广播</p>
 <p>4、添加接收短信权限</p>
 <p><a href="http://www.cnblogs.com/zgqys1980/p/5342020.html" target="_blank" rel="external">http://www.cnblogs.com/zgqys1980/p/5342020.html</a></p>
-<h1 id="收到三条短信？？？"><a href="#收到三条短信？？？" class="headerlink" title="收到三条短信？？？"></a>收到三条短信？？？</h1><h1 id="手机给权限"><a href="#手机给权限" class="headerlink" title="手机给权限"></a>手机给权限</h1><h2 id="Mainfest文件中有几个activity就要加几个activity节点"><a href="#Mainfest文件中有几个activity就要加几个activity节点" class="headerlink" title="Mainfest文件中有几个activity就要加几个activity节点"></a>Mainfest文件中有几个activity就要加几个activity节点</h2>
+<h1 id="收到三条短信？？？"><a href="#收到三条短信？？？" class="headerlink" title="收到三条短信？？？"></a>收到三条短信？？？</h1><h1 id="手机给权限"><a href="#手机给权限" class="headerlink" title="手机给权限"></a>手机给权限</h1><h2 id="Mainfest文件中有几个activity就要加几个activity节点"><a href="#Mainfest文件中有几个activity就要加几个activity节点" class="headerlink" title="Mainfest文件中有几个activity就要加几个activity节点"></a>Mainfest文件中有几个activity就要加几个activity节点</h2><ul>
+<li>1、甲方构建密钥对（公钥和私钥，公钥给对方，私钥留给自己） </li>
+<li>2、甲方使用私钥加密数据，然后用私钥对加密后的数据签名，并把这些发送给乙方；乙方使用公钥、签名来验证待解密数据是否有效，如果有效使用公钥对数据解密。 </li>
+<li>3、乙方使用公钥加密数据，向甲方发送经过加密后的数据；甲方获得加密数据，通过私钥解密。 </li>
+</ul>
+
       
     </div>
 
@@ -443,6 +448,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/15/CryptoLock-Stopping-Ransomware-Attacks-on-User-Data/" rel="prev" title="CryptoLock Stopping Ransomware Attacks on User Data">
+                CryptoLock Stopping Ransomware Attacks on User Data <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -527,7 +536,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
