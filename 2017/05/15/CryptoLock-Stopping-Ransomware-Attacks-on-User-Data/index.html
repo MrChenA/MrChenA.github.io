@@ -90,16 +90,16 @@
 
 
 
-<meta name="description" content="Write everyday">
+<meta name="description" content="目录 介绍和相关工作 标识 实现 实验评估  一、介绍和相关工作1、现状 加密的数据是可恢复的（和破坏性的恶意软件不同） 通过比特币进行匿名支付 存在了将近十年 每年几百万美元的损失 法律机构收到侵害，损失重要文件（只能选择支付）  2、难点 这种恶意软件容易上手 通过行为难以区分是否为恶意软件 主要面向小白用户（从不会数据备份）  3、论文所做工作 Develp an early-warning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CryptoLock Stopping Ransomware Attacks on User Data">
 <meta property="og:url" content="http://yoursite.com/2017/05/15/CryptoLock-Stopping-Ransomware-Attacks-on-User-Data/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
-<meta property="og:description" content="Write everyday">
-<meta property="og:updated_time" content="2017-05-15T04:17:26.014Z">
+<meta property="og:description" content="目录 介绍和相关工作 标识 实现 实验评估  一、介绍和相关工作1、现状 加密的数据是可恢复的（和破坏性的恶意软件不同） 通过比特币进行匿名支付 存在了将近十年 每年几百万美元的损失 法律机构收到侵害，损失重要文件（只能选择支付）  2、难点 这种恶意软件容易上手 通过行为难以区分是否为恶意软件 主要面向小白用户（从不会数据备份）  3、论文所做工作 Develp an early-warning">
+<meta property="og:updated_time" content="2017-05-17T10:33:25.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CryptoLock Stopping Ransomware Attacks on User Data">
-<meta name="twitter:description" content="Write everyday">
+<meta name="twitter:description" content="目录 介绍和相关工作 标识 实现 实验评估  一、介绍和相关工作1、现状 加密的数据是可恢复的（和破坏性的恶意软件不同） 通过比特币进行匿名支付 存在了将近十年 每年几百万美元的损失 法律机构收到侵害，损失重要文件（只能选择支付）  2、难点 这种恶意软件容易上手 通过行为难以区分是否为恶意软件 主要面向小白用户（从不会数据备份）  3、论文所做工作 Develp an early-warning">
 
 
 
@@ -382,7 +382,93 @@
       
 
       
-        
+        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><strong>目录</strong></h2><ul>
+<li><strong>介绍和相关工作</strong></li>
+<li><strong>标识</strong></li>
+<li><strong>实现</strong></li>
+<li><strong>实验评估</strong></li>
+</ul>
+<h1 id="一、介绍和相关工作"><a href="#一、介绍和相关工作" class="headerlink" title="一、介绍和相关工作"></a>一、介绍和相关工作</h1><h2 id="1、现状"><a href="#1、现状" class="headerlink" title="1、现状"></a>1、现状</h2><ul>
+<li>加密的数据是可恢复的（和破坏性的恶意软件不同）</li>
+<li>通过比特币进行匿名支付</li>
+<li>存在了将近十年</li>
+<li>每年几百万美元的损失</li>
+<li>法律机构收到侵害，损失重要文件（只能选择支付）</li>
+</ul>
+<h2 id="2、难点"><a href="#2、难点" class="headerlink" title="2、难点"></a>2、难点</h2><ul>
+<li>这种恶意软件容易上手</li>
+<li>通过行为难以区分是否为恶意软件</li>
+<li>主要面向小白用户（从不会数据备份）</li>
+</ul>
+<h2 id="3、论文所做工作"><a href="#3、论文所做工作" class="headerlink" title="3、论文所做工作"></a>3、论文所做工作</h2><ul>
+<li><p><strong>Develp an early-warning system</strong>：第一个检测用户数据变化的检测系统，目的不是一个文件都不损失，而是损失一部分来发现恶意行为，终止行为。基于Windows平台。</p>
+</li>
+<li><p><strong>Indentify three primary indicators</strong>：找到三个主要行为标识来标识这种恶意行为</p>
+</li>
+<li><strong>Extensive analysis</strong>：正确率比较高（误判几乎为0，只有0.2%的文件损失）、健壮性好<br>大大减少了文件损失和攻击者的利润。<h2 id="4、相关工作"><a href="#4、相关工作" class="headerlink" title="4、相关工作"></a>4、相关工作</h2><h4 id="现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别"><a href="#现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别" class="headerlink" title="现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)"></a>现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)</h4><h4 id="ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么"><a href="#ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么" class="headerlink" title="&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么"></a>&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么</h4></li>
+<li>特征匹配（signature matching）没出现过的恶意软件就很难检测。逃避特征、自动打包技术</li>
+<li>文件的完整性检测：（基于简单的hash值比较）文件出现变动就回提醒，无法区分合法or恶意，难用！</li>
+<li>Andronio等人开发了一个Android平台上的检测工具（结合了动态和静态分析技术，如检测加密函数的调用和线程信息），桌面平台不好用。</li>
+<li>本文的系统检测用户数据的变化，检测用户数据如何变化，注重于补救。<h1 id="二、RANSOMWARE-INDICATORS"><a href="#二、RANSOMWARE-INDICATORS" class="headerlink" title="二、RANSOMWARE INDICATORS"></a>二、RANSOMWARE INDICATORS</h1><h2 id="1、三类Ransomware"><a href="#1、三类Ransomware" class="headerlink" title="1、三类Ransomware"></a>1、三类Ransomware</h2></li>
+<li><strong>A类</strong>：重写文件内容，打开文件、读内容、加密、替换信息、关闭文件。</li>
+<li><strong>B类</strong>：继承A，把文件移出，干完活再移进来</li>
+<li><strong>C类</strong>：打开文件，读文件，加密成一个新的文件，删除原来的文件。（独立的读写流）</li>
+</ul>
+<h5 id="ensp-ensp-ensp-ensp-ensp-ensp-ensp-ensp-忽略不直接修改文件的操作，如写随机数（防止数据恢复）等"><a href="#ensp-ensp-ensp-ensp-ensp-ensp-ensp-ensp-忽略不直接修改文件的操作，如写随机数（防止数据恢复）等" class="headerlink" title="&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;忽略不直接修改文件的操作，如写随机数（防止数据恢复）等"></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;忽略不直接修改文件的操作，如写随机数（防止数据恢复）等</h5><h2 id="2、File-Type-Changes"><a href="#2、File-Type-Changes" class="headerlink" title="2、File Type Changes"></a>2、File Type Changes</h2><p>&ensp;&ensp;这些签名描述了文件类型唯一的特定字节值的顺序和位置，而不仅仅是文件头部信息。由于文件通常在其存在过程中保持其文件类型和格式，所以对这些数据进行批量修改的行为是值得怀疑的行为。</p>
+<p>&ensp;&ensp;利用The file utility 检测文件类型的改变，但是并不是所有的类型改变都是恶意的，有可能是程序更新。比如doc→docx</p>
+<h2 id="3、Similarity-Measurement"><a href="#3、Similarity-Measurement" class="headerlink" title="3、Similarity Measurement"></a>3、Similarity Measurement</h2><h2 id="4、Shannon-Entropy"><a href="#4、Shannon-Entropy" class="headerlink" title="4、Shannon Entropy"></a>4、Shannon Entropy</h2><h2 id="5、Secondary-Indicators"><a href="#5、Secondary-Indicators" class="headerlink" title="5、Secondary Indicators"></a>5、Secondary Indicators</h2><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ul>
+<li>[1]OPF format corpus. <a href="http://openpreservation.org/technology/corpora/opf-format-corpus/" target="_blank" rel="external">http://openpreservation.org/technology/corpora/opf-format-corpus/</a>.</li>
+<li>[2] N. Agrawal, W. J. Bolosky, J. R. Douceur, and J. R. Lorch. A five-year study offile-system metadata. ACM Transactions on Storage (TOS), 2007.</li>
+<li>[3] N. Andronio, S. Zanero, and F. Maggi. HelDroid: Dissecting and detecting mobile ransomware. In Proceedings of the International Symposium on Research inAttacks, Intrusion and Detection (RAID), 2015.</li>
+<li>[4] E. Arnold. Tennessee sheriff pays ransom to cybercriminals,<br>in bitcoin. <a href="http://www.bizjournals.com/memphis/blog/2014/11/" target="_blank" rel="external">http://www.bizjournals.com/memphis/blog/2014/11/</a><br>tennessee-sheriff-pays-ransom-to-cybercriminals-in.html, 2014.</li>
+<li>[5] S. Axelsson. The base-rate fallacy and its implications for the difficulty of<br>intrusion detection. In Proceedings of the ACM Conference on Computer and<br>Communications Security (CCS), 1999.</li>
+<li>[6] D. Carrigan. Police departments hit by ransomware virus. <a href="http://www.wcsh6" target="_blank" rel="external">http://www.wcsh6</a>.<br>com/story/news/local/2015/04/10/police-departments-hit-by-ransomware-virus/<br>25593777/, 2015.</li>
+<li>[7] S. Chakradeo, B. Reaves, P. Traynor, and W. Enck. MAST: Triage for marketscale<br>mobile malware analysis. In Proceedings of ACM Conference on Security<br>and Privacy in Wireless and Mobile Networks (WiSec). ACM, 2013.</li>
+<li>[8] V. Chandola, A. Banerjee, and V. Kumar. Anomaly detection: A survey. ACM<br>Comput. Surv., 41(3), 2009.</li>
+<li>[9] X. Chen, J. Andersen, Z. M. Mao, M. Bailey, and J. Nazario. Towards an understanding<br>of anti-virtualization and anti-debugging behavior in modern malware.<br>In IEEE International Conference on Dependable Systems and Networks, 2008.</li>
+<li>[10] N. Coldwell. Comparison of audio compression. <a href="http://nigelcoldwell.co.uk/audio/" target="_blank" rel="external">http://nigelcoldwell.co.uk/audio/</a>.</li>
+<li>[11] D. Common. Ransomware victims pay cybercriminals<br>to save family photos. <a href="http://www.cbc.ca/news/technology/" target="_blank" rel="external">http://www.cbc.ca/news/technology/</a><br>ransomware-victims-pay-cybercriminals-to-save-family-photos-1.2962106,<br>2015.</li>
+<li>[12] Cuckoo Foundation. Automated malware analysis - cuckoo sandbox. <a href="http://www" target="_blank" rel="external">http://www</a>.<br>cuckoosandbox.org/.</li>
+<li>[13] C. Cuevas and C. Shaffer. Raising the white flag. <a href="http://www.shmoocon.org/2012/" target="_blank" rel="external">http://www.shmoocon.org/2012/</a><br>videos/ShafferCuevas-RaisingTheWhiteFlag.m4v, 2012. Presented at ShmooCon.</li>
+<li>[14] T. Dewan. Teslacrypt joins ransomware field. <a href="https://blogs.mcafee.com/" target="_blank" rel="external">https://blogs.mcafee.com/</a><br>mcafee-labs/teslacrypt-joins-ransomware-field, 2015.</li>
+<li>[15] C. J. Dietrich, C. Rossow, and N. Pohlmann. Exploiting visual appearance to<br>cluster and detect rogue software. In Proceedings of the ACM Symposium on<br>Applied Computing. ACM, 2013.</li>
+<li>[16] J. R. Douceur and W. J. Bolosky. A large-scale study of file-system contents. In<br>Proceedings of the ACM SIGMETRICS International Conference on Measurement<br>and Modeling of Computer Systems, 1999.</li>
+<li>[17] S. Forrest, S. A. Hofmeyr, A. Somayaji, and T. A. Longstaff. A sense of self for<br>unix processes. In Proceedings of the IEEE Symposium on Security and Privacy<br>(S&amp;P), 1996.</li>
+<li>[18] B. Fraga. Swansea police pay $750 “ransom” after computer virus strikes. The<br>Herald News, 2013.</li>
+<li>[19] S. Garfinkel, P. Farrell, V. Roussev, and G. Dinolt. Bringing science to digital<br>forensics with standardized forensic corpora. Digital Investigation, 6, Supplement(<br>0), 2009.</li>
+<li>[20] G. Gu, P. Porras, V. Yegneswaran, M. Fong, and W. Lee. BotHunter: detecting<br>malware infection through IDS-driven dialog correlation. In Proceedings of the<br>USENIX Security Symposium, 2007.</li>
+<li>[21] D. Hadˇziosmanovi′c, L. Simionato, D. Bolzoni, E. Zambon, and S. Etalle. N-gram<br>against the machine: On the feasibility of the N-gram network analysis for binary<br>protocols. In Proceedings of the International Symposium on Research in Attacks,<br>Intrusion and Detection (RAID), 2012.</li>
+<li>[22] B. J. Hicks, A. Dong, R. Palmer, and H. C. Mcalpine. Organizing and managing<br>personal electronic files: A mechanical engineer’s perspective. ACM Transactions<br>on Information Systems (TOIS), 26(4), 2008.</li>
+<li>[23] S. A. Hofmeyr, S. Forrest, and A. Somayaji. Intrusion detection using sequences<br>of system calls. International Journal of Information and Computer Security,<br>6(3), 1998.</li>
+<li>[24] S. Jana and V. Shmatikov. Abusing file processing in malware detectors for fun<br>and profit. In IEEE Symposium on Security and Privacy (S&amp;P), 2012.</li>
+<li>[25] A. Kharraz, W. Robertson, D. Balzarotti, L. Bilge, and E. Kirda. Cutting the<br>gordian knot: A look under the hood of ransomware attacks. DIMVA, 2015.</li>
+<li>[26] G. H. Kim and E. H. Spafford. The design and implementation of tripwire: A file<br>system integrity checker. In Proceedings of the ACM Conference on Computer<br>and Communications Security, 1994.</li>
+<li>[27] J. Kornblum. Identifying almost identical files using context triggered piecewise<br>hashing. Digital Investigation, 3, Supplement(0), 2006.</li>
+<li>[28] S. Kumar and E. H. Spafford. A generic virus scanner for c++. In Proceedings<br>of the Computer Security Applications Conference, 1992.</li>
+<li>[29] A. Lanzi, D. Balzarotti, C. Kruegel, M. Christodorescu, and E. Kirda. Access-<br>Miner: Using system-centric models for malware protection. In Proceedings of<br>the ACM Conference on Computer and Communications Security (CCS), 2010.</li>
+<li>[30] C. Lever, M. Antonakakis, B. Reaves, P. Traynor, and W. Lee. The core of the<br>matter: Analyzing malicious traffic in cellular carriers. In Proceedings of the<br>Network and Distributed System Security Symposium (NDSS), 2013.</li>
+<li>[31] R. Lyda and J. Hamrock. Using entropy analysis to find encrypted and packed<br>malware. IEEE Security and Privacy, 5(2), 2007.</li>
+<li>[32] D. Maiorca, I. Corona, and G. Giacinto. Looking at the bag is not enough<br>to find the bomb: An evasion of structural methods for malicious PDF files<br>detection. In Proceedings of the ACM Symposium on Information, Computer<br>and Communications Security, 2013.</li>
+<li>[33] J. A. P. Marpaung, M. Sain, and H.-J. Lee. Survey on malware evasion techniques:<br>State of the art and challenges. In International Conference on Advanced<br>Communication Technology (ICACT), 2012.</li>
+<li>[34] Y. Nadji, J. Giffin, and P. Traynor. Automated remote repair for mobile malware.<br>In Proceedings of the Annual Computer Security Applications Conference<br>(ACSAC). ACM, 2011.</li>
+<li>[35] J. Oberheide, M. Bailey, and F. Jahanian. PolyPack: An automated online packing<br>service for optimal antivirus evasion. In Proceedings of the USENIX Conference<br>on Offensive Technologies, 2009.</li>
+<li>[36] J. Oberheide, E. Cooke, and F. Jahanian. CloudAV: N-Version antivirus in the<br>network cloud. In USENIX Security Symposium, 2008.</li>
+<li>[37] G. O’Gorman and G. McDonald. Ransomware: A growing menace. Technical<br>report, Symantec Corporation, 2012.</li>
+<li>[38] A. Patcha and J.-M. Park. An overview of anomaly detection techniques: Existing<br>solutions and latest technological trends. Computer Networks, 51(12), 2007.</li>
+<li>[39] R. Perdisci, A. Lanzi, and W. Lee. Classification of packed executables for<br>accurate computer virus detection. Pattern recognition letters, 29(14), 2008.</li>
+<li>[40] V. Roussev. Data fingerprinting with similarity digests. In Advances in Digital<br>Forensics VI, IFIP Advances in Information and Communication Technology.<br>Springer Berlin Heidelberg, 2010.</li>
+<li>[41] N. Scaife, H. Carter, and P. Traynor. OnionDNS: A seizure-resistant top-level<br>domain. In In IEEE Conference on Communications and Network Security (CNS),<br>2015.</li>
+<li>[42] I. Sorokin. Comparing files using structural entropy. Journal in Computer<br>Virology, 7(4), 2011.</li>
+<li>[43] A. Tang, S. Sethumadhavan, and S. Stolfo. Unsupervised Anomaly-based<br>Malware Detection using Hardware Features. In Proceedings of the International<br>Symposium on Research in Attacks, Intrusion and Detection (RAID), 2014.</li>
+<li>[44] D. J. Tian, A. Bates, and K. Butler. Defending against malicious USB firmware<br>with GoodUSB. In Proceedings of the Annual Computer Security Applications<br>Conference (ACSAC). ACM, 2015.</li>
+<li>[45] P. Traynor, M. Chien, S. Weaver, B. Hicks, and P. McDaniel. Noninvasive methods<br>for host certification. ACM Transactions on Information and System Security,<br>11(3), 2008.</li>
+<li>[46] X. Ugarte-Pedrero, D. Balzarotti, I. Santos, P. G. Bringas, and S. Antipolis. SoK<br>: Deep Packer Inspection : A Longitudinal Study of the Complexity of Run-Time<br>Packers. In IEEE Symposium on Security and Privacy (S&amp;P), 2015.</li>
+<li>[47] A. Viswanathan, K. Tan, and C. Neuman. Deconstructing the assessment of<br>anomaly-based intrusion detectors. In Proceedings of the International Symposium<br>on Research in Attacks, Intrusion and Detection (RAID), 2013.</li>
+<li>[48] J. Walter. Meet tox: Ransomware for the rest of us. <a href="https://blogs.mcafee.com/" target="_blank" rel="external">https://blogs.mcafee.com/</a><br>mcafee-labs/meet-tox-ransomware-for-the-rest-of-us/, 2015.</li>
+<li>[49] C. Warrender, S. Forrest, and B. Pearlmutter. Detecting intrusions using system<br>calls: alternative data models. In Proceedings of the IEEE Symposium on Security<br>and Privacy (S&amp;P), 1999.</li>
+<li>[50] H. Weisbaum. CryptoLocker crooks launch ‘customer service’ site. <a href="http://www" target="_blank" rel="external">http://www</a>.<br>cnbc.com/id/101195861, 2013.</li>
+</ul>
+
       
     </div>
 
@@ -486,8 +572,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -578,6 +673,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、介绍和相关工作"><span class="nav-number"></span> <span class="nav-text">一、介绍和相关工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、现状"><span class="nav-number">1.</span> <span class="nav-text">1、现状</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、难点"><span class="nav-number">2.</span> <span class="nav-text">2、难点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、论文所做工作"><span class="nav-number">3.</span> <span class="nav-text">3、论文所做工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、相关工作"><span class="nav-number">4.</span> <span class="nav-text">4、相关工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别"><span class="nav-number">4.0.1.</span> <span class="nav-text">现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么"><span class="nav-number">4.0.2.</span> <span class="nav-text">   1.什么是恶意软件       2.恶意软件做什么</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、RANSOMWARE-INDICATORS"><span class="nav-number"></span> <span class="nav-text">二、RANSOMWARE INDICATORS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、三类Ransomware"><span class="nav-number">1.</span> <span class="nav-text">1、三类Ransomware</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ensp-ensp-ensp-ensp-ensp-ensp-ensp-ensp-忽略不直接修改文件的操作，如写随机数（防止数据恢复）等"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">        忽略不直接修改文件的操作，如写随机数（防止数据恢复）等</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、File-Type-Changes"><span class="nav-number">2.</span> <span class="nav-text">2、File Type Changes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、Similarity-Measurement"><span class="nav-number">3.</span> <span class="nav-text">3、Similarity Measurement</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、Shannon-Entropy"><span class="nav-number">4.</span> <span class="nav-text">4、Shannon Entropy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、Secondary-Indicators"><span class="nav-number">5.</span> <span class="nav-text">5、Secondary Indicators</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">5.1.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
