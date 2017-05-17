@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/15/CryptoLock-Stopping-Ransomware-Attacks-on-User-Data/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
 <meta property="og:description" content="目录 介绍和相关工作 标识 实现 实验评估  一、介绍和相关工作1、现状 加密的数据是可恢复的（和破坏性的恶意软件不同） 通过比特币进行匿名支付 存在了将近十年 每年几百万美元的损失 法律机构收到侵害，损失重要文件（只能选择支付）">
-<meta property="og:updated_time" content="2017-05-17T10:35:56.646Z">
+<meta property="og:updated_time" content="2017-05-17T10:38:27.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CryptoLock Stopping Ransomware Attacks on User Data">
 <meta name="twitter:description" content="目录 介绍和相关工作 标识 实现 实验评估  一、介绍和相关工作1、现状 加密的数据是可恢复的（和破坏性的恶意软件不同） 通过比特币进行匿名支付 存在了将近十年 每年几百万美元的损失 法律机构收到侵害，损失重要文件（只能选择支付）">
@@ -393,8 +393,10 @@
 <li>通过比特币进行匿名支付</li>
 <li>存在了将近十年</li>
 <li>每年几百万美元的损失</li>
-<li>法律机构收到侵害，损失重要文件（只能选择支付）<a id="more"></a>
-<h2 id="2、难点"><a href="#2、难点" class="headerlink" title="2、难点"></a>2、难点</h2></li>
+<li>法律机构收到侵害，损失重要文件（只能选择支付）</li>
+</ul>
+<a id="more"></a>
+<h2 id="2、难点"><a href="#2、难点" class="headerlink" title="2、难点"></a>2、难点</h2><ul>
 <li>这种恶意软件容易上手</li>
 <li>通过行为难以区分是否为恶意软件</li>
 <li>主要面向小白用户（从不会数据备份）</li>
@@ -404,11 +406,15 @@
 </li>
 <li><p><strong>Indentify three primary indicators</strong>：找到三个主要行为标识来标识这种恶意行为</p>
 </li>
-<li><strong>Extensive analysis</strong>：正确率比较高（误判几乎为0，只有0.2%的文件损失）、健壮性好<br>大大减少了文件损失和攻击者的利润。<h2 id="4、相关工作"><a href="#4、相关工作" class="headerlink" title="4、相关工作"></a>4、相关工作</h2><h4 id="现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别"><a href="#现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别" class="headerlink" title="现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)"></a>现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)</h4><h4 id="ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么"><a href="#ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么" class="headerlink" title="&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么"></a>&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么</h4></li>
+<li><strong>Extensive analysis</strong>：正确率比较高（误判几乎为0，只有0.2%的文件损失）、健壮性好<br>大大减少了文件损失和攻击者的利润。</li>
+</ul>
+<h2 id="4、相关工作"><a href="#4、相关工作" class="headerlink" title="4、相关工作"></a>4、相关工作</h2><h4 id="现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别"><a href="#现存的技术区分程序是否为恶意软件，主要依靠两个特性：-异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别" class="headerlink" title="现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)"></a>现存的技术区分程序是否为恶意软件，主要依靠两个特性：(异常检测的IDE系统使用的就是不同的机器学习和数据分析技术来甄别)</h4><h4 id="ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么"><a href="#ensp-ensp-1-什么是恶意软件-ensp-ensp-2-恶意软件做什么" class="headerlink" title="&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么"></a>&ensp; &ensp;1.什么是恶意软件 &ensp; &ensp;   2.恶意软件做什么</h4><ul>
 <li>特征匹配（signature matching）没出现过的恶意软件就很难检测。逃避特征、自动打包技术</li>
 <li>文件的完整性检测：（基于简单的hash值比较）文件出现变动就回提醒，无法区分合法or恶意，难用！</li>
 <li>Andronio等人开发了一个Android平台上的检测工具（结合了动态和静态分析技术，如检测加密函数的调用和线程信息），桌面平台不好用。</li>
-<li>本文的系统检测用户数据的变化，检测用户数据如何变化，注重于补救。<h1 id="二、RANSOMWARE-INDICATORS"><a href="#二、RANSOMWARE-INDICATORS" class="headerlink" title="二、RANSOMWARE INDICATORS"></a>二、RANSOMWARE INDICATORS</h1><h2 id="1、三类Ransomware"><a href="#1、三类Ransomware" class="headerlink" title="1、三类Ransomware"></a>1、三类Ransomware</h2></li>
+<li>本文的系统检测用户数据的变化，检测用户数据如何变化，注重于补救。</li>
+</ul>
+<h1 id="二、RANSOMWARE-INDICATORS"><a href="#二、RANSOMWARE-INDICATORS" class="headerlink" title="二、RANSOMWARE INDICATORS"></a>二、RANSOMWARE INDICATORS</h1><h2 id="1、三类Ransomware"><a href="#1、三类Ransomware" class="headerlink" title="1、三类Ransomware"></a>1、三类Ransomware</h2><ul>
 <li><strong>A类</strong>：重写文件内容，打开文件、读内容、加密、替换信息、关闭文件。</li>
 <li><strong>B类</strong>：继承A，把文件移出，干完活再移进来</li>
 <li><strong>C类</strong>：打开文件，读文件，加密成一个新的文件，删除原来的文件。（独立的读写流）</li>
