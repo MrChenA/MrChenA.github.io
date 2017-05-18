@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播  2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限M">
+<meta name="description" content="目录 短信接发信息程序 信息加密程序 常见问题  http://www.jb51.net/article/91027.htm 1、创建内部广播接收器类，接收系统发出的短信广播 2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限">
 <meta name="keywords" content="tech">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SMS-短信加密程序">
 <meta property="og:url" content="http://yoursite.com/2017/05/14/SMS-短信加密程序/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
-<meta property="og:description" content="目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播  2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限M">
-<meta property="og:updated_time" content="2017-05-15T02:32:40.079Z">
+<meta property="og:description" content="目录 短信接发信息程序 信息加密程序 常见问题  http://www.jb51.net/article/91027.htm 1、创建内部广播接收器类，接收系统发出的短信广播 2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限">
+<meta property="og:updated_time" content="2017-05-18T08:46:07.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SMS-短信加密程序">
-<meta name="twitter:description" content="目录 短信接发信息程序 信息加密程序 常见问题http://www.jb51.net/article/91027.htm1、创建内部广播接收器类，接收系统发出的短信广播  2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限 http://www.cnblogs.com/zgqys1980/p/5342020.html 收到三条短信？？？手机给权限M">
+<meta name="twitter:description" content="目录 短信接发信息程序 信息加密程序 常见问题  http://www.jb51.net/article/91027.htm 1、创建内部广播接收器类，接收系统发出的短信广播 2、从获得的内容中解析出短信发送者和短信内容 3、在Activity中注册广播 4、添加接收短信权限">
 
 
 
@@ -386,17 +386,25 @@
         <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><strong>目录</strong></h2><ul>
 <li>短信接发信息程序</li>
 <li>信息加密程序</li>
-<li>常见问题<br><a href="http://www.jb51.net/article/91027.htm" target="_blank" rel="external">http://www.jb51.net/article/91027.htm</a><br>1、创建内部广播接收器类，接收系统发出的短信广播</li>
+<li>常见问题</li>
 </ul>
+<p><a href="http://www.jb51.net/article/91027.htm" target="_blank" rel="external">http://www.jb51.net/article/91027.htm</a></p>
+<p>1、创建内部广播接收器类，接收系统发出的短信广播</p>
 <p>2、从获得的内容中解析出短信发送者和短信内容</p>
 <p>3、在Activity中注册广播</p>
 <p>4、添加接收短信权限</p>
+<a id="more"></a>
 <p><a href="http://www.cnblogs.com/zgqys1980/p/5342020.html" target="_blank" rel="external">http://www.cnblogs.com/zgqys1980/p/5342020.html</a></p>
 <h1 id="收到三条短信？？？"><a href="#收到三条短信？？？" class="headerlink" title="收到三条短信？？？"></a>收到三条短信？？？</h1><h1 id="手机给权限"><a href="#手机给权限" class="headerlink" title="手机给权限"></a>手机给权限</h1><h2 id="Mainfest文件中有几个activity就要加几个activity节点"><a href="#Mainfest文件中有几个activity就要加几个activity节点" class="headerlink" title="Mainfest文件中有几个activity就要加几个activity节点"></a>Mainfest文件中有几个activity就要加几个activity节点</h2><ul>
 <li>1、甲方构建密钥对（公钥和私钥，公钥给对方，私钥留给自己） </li>
 <li>2、甲方使用私钥加密数据，然后用私钥对加密后的数据签名，并把这些发送给乙方；乙方使用公钥、签名来验证待解密数据是否有效，如果有效使用公钥对数据解密。 </li>
-<li>3、乙方使用公钥加密数据，向甲方发送经过加密后的数据；甲方获得加密数据，通过私钥解密。 </li>
+<li>3、乙方使用公钥加密数据，向甲方发送经过加密后的数据；甲方获得加密数据，通过私钥解密。<br>使用数据库SQLiteDatabase</li>
 </ul>
+<p>使用对称密钥加密信息<br>使用私钥加密对称密钥发送给对方<br>公钥当面交换<br>数据库一个表三个字段 电话号码、密钥、公钥or对称密钥<br>特殊字段 电话号码为0 密钥为自己的公钥 1 密钥为自己的私钥</p>
+<p>发送步骤（已经当面交换公钥）：<br>1、生成对称密钥<br>1.1 将密钥转化成字符串(Base64.encoderToString())<br>2、保存到数据库<br>3、用私钥加密对称密钥<br>4、用对称密钥加密发送信息<br>5、发送信息<br>6、发送下一天=条信息，根据电话号码找到密钥，执行4、5<br>接受步骤<br>1、根据信息前部的字符串信息判断是密钥还是信息<br>信息：<br>2、根据电话号码找到相应的密钥<br>3、解密信息，显示在界面上<br>密钥：<br>4、根据电话号码找到相应的公钥<br>5、解密信息<br>6、判断对称密钥是否已经存在<br>存在<br>7、替换 update<br>不存在<br>8、将密钥和电话号存入数据库</p>
+<p>Diffie–Hellman key exchange</p>
+<p>A、B各自选择随机数Xa、Xb<br>A、B各自计算Ya、Yb<br>交换Ya，Yb<br>A计算K＝Yb^Xa mod q<br>   B计算K’＝Ya^Xb mod q </p>
+<p>事实上，K＝K’</p>
 
       
     </div>
