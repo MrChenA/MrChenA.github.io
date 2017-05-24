@@ -90,20 +90,20 @@
 
 
 
-<meta name="description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如果不需要加">
+<meta name="description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用以及二维码）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如">
 <meta name="keywords" content="tech">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SMS-短信加密程序">
 <meta property="og:url" content="http://yoursite.com/2017/05/14/SMS-短信加密程序/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
-<meta property="og:description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如果不需要加">
-<meta property="og:image" content="http://yoursite.com/img/send.png">
-<meta property="og:image" content="http://yoursite.com/img/receive.png">
-<meta property="og:updated_time" content="2017-05-23T15:10:52.106Z">
+<meta property="og:description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用以及二维码）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如">
+<meta property="og:image" content="http://yoursite.com/source/img/send.png">
+<meta property="og:image" content="http://yoursite.com/source/img/receive.png">
+<meta property="og:updated_time" content="2017-05-23T15:57:55.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SMS-短信加密程序">
-<meta name="twitter:description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如果不需要加">
-<meta name="twitter:image" content="http://yoursite.com/img/send.png">
+<meta name="twitter:description" content="目录 程序设计及编写 遇见的问题 一些加密算法的原理 收获（数据库的使用以及二维码）  短信加密分四步走（目标：实现前三步） 编写短信收发程序 实现AES加密 实现RSA/Diffi-Hellman的非对称加密的密钥交换 实现RSA签名（MAC技术）  一、程序设计1.发送过程设计：1.1 发送界面： 1.2 发送过程设计1.2.1使用过程设计 1234567891011121314151617如">
+<meta name="twitter:image" content="http://yoursite.com/source/img/send.png">
 
 
 
@@ -390,7 +390,7 @@
 <li>程序设计及编写</li>
 <li>遇见的问题</li>
 <li>一些加密算法的原理</li>
-<li>收获（数据库的使用）</li>
+<li>收获（数据库的使用以及二维码）</li>
 </ul>
 <h2 id="短信加密分四步走（目标：实现前三步）"><a href="#短信加密分四步走（目标：实现前三步）" class="headerlink" title="短信加密分四步走（目标：实现前三步）"></a>短信加密分四步走（目标：实现前三步）</h2><ol>
 <li>编写短信收发程序</li>
@@ -398,12 +398,12 @@
 <li>实现RSA/Diffi-Hellman的非对称加密的密钥交换</li>
 <li>实现RSA签名（MAC技术）</li>
 </ol>
-<h1 id="一、程序设计"><a href="#一、程序设计" class="headerlink" title="一、程序设计"></a>一、程序设计</h1><h2 id="1-发送过程设计："><a href="#1-发送过程设计：" class="headerlink" title="1.发送过程设计："></a>1.发送过程设计：</h2><h3 id="1-1-发送界面："><a href="#1-1-发送界面：" class="headerlink" title="1.1 发送界面："></a>1.1 发送界面：</h3><p><img src="/img/send.png" width="300"></p>
+<h1 id="一、程序设计"><a href="#一、程序设计" class="headerlink" title="一、程序设计"></a>一、程序设计</h1><h2 id="1-发送过程设计："><a href="#1-发送过程设计：" class="headerlink" title="1.发送过程设计："></a>1.发送过程设计：</h2><h3 id="1-1-发送界面："><a href="#1-1-发送界面：" class="headerlink" title="1.1 发送界面："></a>1.1 发送界面：</h3><p><img src="/source/img/send.png" width="300"></p>
 <h3 id="1-2-发送过程设计"><a href="#1-2-发送过程设计" class="headerlink" title="1.2 发送过程设计"></a>1.2 发送过程设计<br></h3><p>1.2.1使用过程设计</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">如果不需要加密发送</div><div class="line">  直接输入电话号码和信息</div><div class="line">  点击发送</div><div class="line">否则</div><div class="line">  如果是第一次使用软件</div><div class="line">    生成自己的非对称密钥保存到自己数据库里面（后边的签名和对称密钥交换需要）</div><div class="line">  如果不是第一次使用该软件</div><div class="line">    如果需要和新人（不知道对方公钥的人）发送信息</div><div class="line">      输入“0”，查询自己的公钥</div><div class="line">      和对方交换公钥</div><div class="line">      输入对方的电话号码和公钥，保存对方的公钥</div><div class="line">    如果和已知对方公钥的好友发送信息</div><div class="line">      如果想要变换回话密钥或者第一次与对方通话</div><div class="line">        需要发送回话密钥给对方</div><div class="line">      否则</div><div class="line">        直接输入对方电话号码和信息</div><div class="line">        点击加密发送信息</div></pre></td></tr></table></figure>
 <p>1.2.2 使用细节设计</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">发送：</div><div class="line"></div><div class="line"></div><div class="line">加密发送：</div><div class="line"></div><div class="line">发送密钥：</div><div class="line">生成非对称密钥：</div><div class="line">保运公钥：</div><div class="line">查询公钥：</div></pre></td></tr></table></figure>
-<h2 id="2-接受过程设计"><a href="#2-接受过程设计" class="headerlink" title="2.接受过程设计"></a>2.接受过程设计</h2><h3 id="2-1-接受界面"><a href="#2-1-接受界面" class="headerlink" title="2.1 接受界面"></a>2.1 接受界面</h3><p><img src="/img/receive.png" width="300"></p>
+<h2 id="2-接受过程设计"><a href="#2-接受过程设计" class="headerlink" title="2.接受过程设计"></a>2.接受过程设计</h2><h3 id="2-1-接受界面"><a href="#2-1-接受界面" class="headerlink" title="2.1 接受界面"></a>2.1 接受界面</h3><p><img src="/source/img/receive.png" width="300"></p>
 <h3 id="2-2-接受过程设计"><a href="#2-2-接受过程设计" class="headerlink" title="2.2 接受过程设计"></a>2.2 接受过程设计</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">接收到短信</div><div class="line">提取短信的信息和电话号码</div></pre></td></tr></table></figure>
 <h1 id="二、程序具体实现"><a href="#二、程序具体实现" class="headerlink" title="二、程序具体实现"></a>二、程序具体实现</h1><h2 id="1、编写短信收发程序"><a href="#1、编写短信收发程序" class="headerlink" title="1、编写短信收发程序"></a>1、编写短信收发程序</h2><h3 id="1-1-发送短信"><a href="#1-1-发送短信" class="headerlink" title="1.1 发送短信"></a>1.1 发送短信</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//创建一个PendingIntent对象</div><div class="line">               PendingIntent pi = PendingIntent.getActivity(MainActivity.this, 0, new Intent(), 0);</div><div class="line">               //发送短信</div><div class="line">               //短信具有字数限制，分条发送</div><div class="line">               ArrayList&lt;String&gt; list = sManager.divideMessage(content.getText().toString());  //因为一条短信有字数限制，因此要将长短信拆分</div><div class="line">               for(String text:list)</div><div class="line">               &#123;</div><div class="line">                   sManager.sendTextMessage(number.getText().toString(), null, text, pi, null);</div><div class="line">               &#125;</div><div class="line"></div><div class="line">              // sManager.sendTextMessage(number.getText().toString(), null, content.getText().toString(), pi, null);</div><div class="line">               //提示短信发送成功</div><div class="line">               Toast.makeText(MainActivity.this, &quot;短信发送成功&quot;, Toast.LENGTH_LONG).show();</div></pre></td></tr></table></figure>
 <h3 id="1-2接受短息"><a href="#1-2接受短息" class="headerlink" title="1.2接受短息"></a>1.2接受短息</h3><p>系统受到短信之后欧会进行广播。<br>Broadcast Reciver的使用<br>AndroidManifest.xml文件需要注册Receiver</p>
@@ -412,6 +412,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;uses-permission android:name=&quot;android.permission.SEND_SMS&quot; /&gt;</div><div class="line">&lt;uses-permission android:name=&quot;android.permission.RECEIVE_SMS&quot; /&gt;</div><div class="line">&lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot; /&gt;</div></pre></td></tr></table></figure>
 <p>接收短信代码(Onreceive)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">Bundle bundle = intent.getExtras();</div><div class="line">// 提取短信消息</div><div class="line"> Object[] pdus = (Object[]) bundle.get(&quot;pdus&quot;);</div><div class="line">SmsMessage[] messages = new SmsMessage[pdus.length];</div><div class="line">for (int i = 0; i &lt; messages.length; i++)</div><div class="line">&#123;</div><div class="line">    messages[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);</div><div class="line">&#125;</div><div class="line"></div><div class="line">String address = messages[0].getOriginatingAddress(); // 获取发送方号码</div><div class="line"> String fullMessage = &quot;&quot;;</div><div class="line">//合并短信</div><div class="line">for (SmsMessage message : messages) </div><div class="line">&#123;</div><div class="line"></div><div class="line">    fullMessage += message.getMessageBody(); // 获取短信内容</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>二维码扫描：<a href="http://www.jianshu.com/p/e80a85b17920" target="_blank" rel="external">http://www.jianshu.com/p/e80a85b17920</a><br>二维码生成：<a href="http://www.open-open.com/lib/view/open1433399323182.html" target="_blank" rel="external">http://www.open-open.com/lib/view/open1433399323182.html</a></p>
 <h1 id="三、遇见的问题及解决方法"><a href="#三、遇见的问题及解决方法" class="headerlink" title="三、遇见的问题及解决方法"></a>三、遇见的问题及解决方法</h1><h2 id="1-Can’t-bind-to-local-8600-for-debugger"><a href="#1-Can’t-bind-to-local-8600-for-debugger" class="headerlink" title="1. Can’t bind to local 8600 for debugger"></a>1. Can’t bind to local 8600 for debugger</h2><p><a href="http://www.jb51.net/article/91027.htm" target="_blank" rel="external">http://www.jb51.net/article/91027.htm</a></p>
 <p>1、创建内部广播接收器类，接收系统发出的短信广播</p>
 <p>2、从获得的内容中解析出短信发送者和短信内容</p>
