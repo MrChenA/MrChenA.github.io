@@ -387,7 +387,25 @@
       
         
           
-            
+            <h2 id="哈希长度扩展攻击"><a href="#哈希长度扩展攻击" class="headerlink" title="哈希长度扩展攻击"></a>哈希长度扩展攻击</h2><p>相信你一定能拿到想要的</p>
+<p>Hint:你可能希望知道服务器端发生了什么。。</p>
+<p>格式：CTF{} </p>
+<p><a href="http://ctf5.shiyanbar.com/web/kzhan.php" target="_blank" rel="external">链接</a></p>
+<h2 id="c语言中undefined-reference-to-“”怎么解决"><a href="#c语言中undefined-reference-to-“”怎么解决" class="headerlink" title="c语言中undefined reference to “”怎么解决"></a>c语言中undefined reference to “”怎么解决</h2><ol>
+<li>链接时缺失了相关目标文件（.o）</li>
+</ol>
+<p>　　测试代码如下：</p>
+<p>　　</p>
+<p>　　然后编译。</p>
+<p>　　gcc -c test.c<br>　　gcc –c main.c<br>　　得到两个 .o 文件，一个是 main.o，一个是 test.o ，然后我们链接 .o 得到可执行程序：</p>
+<p>　　gcc -o main main.o</p>
+<p>　　这时，你会发现，报错了：</p>
+<p>　　main.o: In function <code>main&#39;:
+　　main.c:(.text+0x7): undefined reference to</code>test’<br>　　collect2: ld returned 1 exit status<br>　　这就是最典型的undefined reference错误，因为在链接时发现找不到某个函数的实现文件，本例中test.o文件中包含了test()函数的实现，所以如果按下面这种方式链接就没事了。</p>
+<p>　　gcc -o main main.o test.o<br>　　【扩展】：其实上面为了让大家更加清楚底层原因，我把编译链接分开了，下面这样编译也会报undefined reference错，其实底层原因与上面是一样的。</p>
+<p>　　gcc -o main main.c //缺少test()的实现文件<br>　　需要改成如下形式才能成功，将test()函数的实现文件一起编译。</p>
+<p>　　gcc -o main main.c test.c //ok,没问题了</p>
+<h2 id="PHP中的序列化和反序列化"><a href="#PHP中的序列化和反序列化" class="headerlink" title="PHP中的序列化和反序列化"></a>PHP中的序列化和反序列化</h2><h2 id="此处的关键就是利用sha1算法的bug，sha1函数对参数为数组的情况会反回false-即可使第二个条件成立。"><a href="#此处的关键就是利用sha1算法的bug，sha1函数对参数为数组的情况会反回false-即可使第二个条件成立。" class="headerlink" title="此处的关键就是利用sha1算法的bug，sha1函数对参数为数组的情况会反回false 即可使第二个条件成立。"></a>此处的关键就是利用sha1算法的bug，sha1函数对参数为数组的情况会反回false 即可使第二个条件成立。</h2><h2 id="php比较操作符的安全问题"><a href="#php比较操作符的安全问题" class="headerlink" title="php比较操作符的安全问题"></a>php比较操作符的安全问题</h2>
           
         
       
