@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="articles," />
 
 
 
@@ -90,15 +90,17 @@
 
 
 
-<meta name="description" content="Write everyday">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr.Chen --勿忘初衷">
-<meta property="og:url" content="http://yoursite.com/archives/2017/05/index.html">
+<meta name="description" content="1、Hook原理API Hooking有两种，内核态级别的和用户态级别的。内核态级别的API Hooking也是很多病毒的实现原理，而且在微软不断强化其PatchGuard技术之后，已经越来越困难。做为建设四化的四有青年，我们还是把精力集中在用户态级别的API Hooking上好了。用户态的API Hooking其实就是为了在应用程序和Windows之间插一脚，从而达到用户调用的不再直接是Wind">
+<meta name="keywords" content="articles">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hook学习">
+<meta property="og:url" content="http://yoursite.com/2017/06/01/Hook学习/index.html">
 <meta property="og:site_name" content="Mr.Chen --勿忘初衷">
-<meta property="og:description" content="Write everyday">
+<meta property="og:description" content="1、Hook原理API Hooking有两种，内核态级别的和用户态级别的。内核态级别的API Hooking也是很多病毒的实现原理，而且在微软不断强化其PatchGuard技术之后，已经越来越困难。做为建设四化的四有青年，我们还是把精力集中在用户态级别的API Hooking上好了。用户态的API Hooking其实就是为了在应用程序和Windows之间插一脚，从而达到用户调用的不再直接是Wind">
+<meta property="og:updated_time" content="2017-06-02T14:35:50.346Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.Chen --勿忘初衷">
-<meta name="twitter:description" content="Write everyday">
+<meta name="twitter:title" content="Hook学习">
+<meta name="twitter:description" content="1、Hook原理API Hooking有两种，内核态级别的和用户态级别的。内核态级别的API Hooking也是很多病毒的实现原理，而且在微软不断强化其PatchGuard技术之后，已经越来越困难。做为建设四化的四有青年，我们还是把精力集中在用户态级别的API Hooking上好了。用户态的API Hooking其实就是为了在应用程序和Windows之间插一脚，从而达到用户调用的不再直接是Wind">
 
 
 
@@ -126,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/05/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/01/Hook学习/"/>
 
 
 
 
 
-  <title>归档 | Mr.Chen --勿忘初衷</title>
+  <title>Hook学习 | Mr.Chen --勿忘初衷</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -157,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -285,399 +287,215 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 11 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/26/CTF/" itemprop="url">
-              
-                <span itemprop="name">CTF</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-26T15:16:24+08:00"
-              content="2017-05-26" >
-          05-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/26/冥想-从自己开始改变/" itemprop="url">
-              
-                <span itemprop="name">冥想-从自己开始改变</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-26T10:28:05+08:00"
-              content="2017-05-26" >
-          05-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/20/马克思主义哲学/" itemprop="url">
-              
-                <span itemprop="name">马克思主义哲学</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-20T10:19:33+08:00"
-              content="2017-05-20" >
-          05-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/20/活法/" itemprop="url">
-              
-                <span itemprop="name">活法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-20T09:25:21+08:00"
-              content="2017-05-20" >
-          05-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/15/CryptoLock-Stopping-Ransomware-Attacks-on-User-Data/" itemprop="url">
-              
-                <span itemprop="name">CryptoLock Stopping Ransomware Attacks on User Data</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-15T12:17:25+08:00"
-              content="2017-05-15" >
-          05-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/SMS-短信加密程序/" itemprop="url">
-              
-                <span itemprop="name">SMS-短信加密程序</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T00:16:48+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/12/用Windows-Server搭建AD域控制服务器/" itemprop="url">
-              
-                <span itemprop="name">用Windows Server搭建AD域控制服务器</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-12T14:52:32+08:00"
-              content="2017-05-12" >
-          05-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/12/hexo搭站笔记/" itemprop="url">
-              
-                <span itemprop="name">hexo搭站笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-12T14:51:14+08:00"
-              content="2017-05-12" >
-          05-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/我们应该泛滥/" itemprop="url">
-              
-                <span itemprop="name">我们应该泛滥</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T17:33:08+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T16:51:16+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/01/Hook学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Chen --勿忘初衷">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hook学习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-01T21:04:33+08:00">
+                2017-06-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/01/Hook学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/06/01/Hook学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/06/01/Hook学习/" class="leancloud_visitors" data-flag-title="Hook学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1、Hook原理"><a href="#1、Hook原理" class="headerlink" title="1、Hook原理"></a>1、Hook原理</h1><p>API Hooking有两种，内核态级别的和用户态级别的。内核态级别的API Hooking也是很多病毒的实现原理，而且在微软不断强化其PatchGuard技术之后，已经越来越困难。做为建设四化的四有青年，我们还是把精力集中在用户态级别的API Hooking上好了。用户态的API Hooking其实就是为了在应用程序和Windows之间插一脚，从而达到用户调用的不再直接是Windows提供的函数，而是调用我们提供的函数。我们可以选择把调用转交给真正的Windows提供的函数，也可以选择自己处理掉，如果我们知道怎么处理的话。API Hooking非常强大可以应用在很多地方，比如监测（非安全领域，因为很容易绕过），虚拟化，软件破解等。要实现API Hooking有很多选择，基本上可以分为：</p>
+<a id="more"></a>
+<p>1、木马DLL<br>2、修改导出表</p>
+<p>3、修改导入表<br>4、代码重写</p>
+<p>实现的难易程度也基本上是上述的顺序。木马DLL是最好实现的，前年我因为需要解码nellymoser编码的音频，但是只有Flash播放器才有它的解码器。所以我就把winmm.dll这个系统提供多媒体功能的dll做了一个木马，实现了拦截wav输出的目的。木马DLL只需要你写一个同名的dll，导出相同名字和签名的函数即可。不过它的限制也最大，最大的原因是windows核心的DLL是不会从当前目录加载的（比如user32.dll），同时它还要求木马DLL必须预先放置在exe的同级目录下。<br>修改导出和导入表限制也很大。真正的王道是代码重写，不过难度陡增。在这个方面比较出名的有Detours（微软研究院的，不过已经没更新了），和madshi（DELPHI领域的，用户众多）。不过最近新出了一种非常强大的库，叫EasyHook。它具有非常独特的特性，支持.NET。也就是说，你可以用C#来写API钩子。这在以前是无法想象的。<a href="http://easyhook.github.io/" target="_blank" rel="external">它的项目地址是这里</a>。 EasyHook其实不光是一个API Hook的库，它还提供了Remote Injection（远程注入）的功能。也就是说，你不但能够在Hook当前进程的API，还能去Hook其他进程的API。</p>
+<p>所谓代码重写，是指修改DLL映射到当前进程的内存中的代码（二进制的机器指令）。每个API都会在运行时解析出一个地址，然后程序会用call指令去调用这个地址所包含的机器指令。代码重写就是把这个地址所在位置的机器指令重写了，从而达到从中插一脚的目的。简化后的流程为：</p>
+<p>1、调用API地址所在处的指令</p>
+<p>2、被改写的代码被执行（一般就是一个jmp指令，跳转到一个更开阔的地方去做更多的事情）</p>
+<p>3、执行Hook</p>
+<p>4、执行被覆盖的指令（一般是5个字节）</p>
+<p>5、跳转回（API地址所在处+5个字节）的位置继续执行原代码</p>
+<p>要完成这样一个流程已经很不容易。它需要你懂得80x86的汇编语言，而且要有很强的debug能力。但是这只是一个简化的流程，真正复杂的地方在于：</p>
+<p>1、不可覆盖的代码的监测（比如jne就无法被覆盖）</p>
+<p>2、Hook的可靠卸载</p>
+<p>3、被覆盖指令长度的确定（一般是5个字节，但是那只是一般）</p>
+<p>4、不同CPU指令集的支持（64位？）</p>
+<p>5、Hook中调用了被Hook的API怎么办？</p>
+<p>对于上述问题考虑的周到与否是衡量一个API Hook库的标准。很高兴的告诉你，EasyHook把上述问题都考虑进去了。而且依靠CLR Hosting API，EasyHook还实现了.NET的API钩子。原理就是EasyHook自己先把API调用拦截下来，然后用CLR Hosting API启动一个CLR的runtime，然后用runtime去加载一个GAC中的Assembly，然后用反射去调用你的代码，并且给你提供了足够的RuntimeInfo，使得你可以知道当前的环境，以及回调原始的API。不过仍然在Hook系统的API的时候，仍然要非常小心死锁的问题。<br>EasyHook也不是完美的。据我个人测试，它远程Hook .NET产生出来的exe有问题。不过这是它的Remote Injection部分的问题（很可能是CreateRemoteThread与CLR冲突导致的）。而且EasyHook确定指令长度那块内嵌的反汇编器来路不明（作者自述是从一个德文论坛上下载的程序反汇编来的），其实可以考虑用distorm代替。</p>
+<p>其内部实现有一段关键的汇编代码叫trampoline（蹦床）。这段代码就是那被覆盖的5个字节要jmp到的一段代码，它负责调用你的Hook和善后。所以说如果你用的是.NET写的钩子，这是一个三级跳的过程：</p>
+<p>1、应用程序调用API</p>
+<p>2、API被调用（其实是我们的jmp指令被调用，因为头5个字节被覆盖了）<br>3、那个5个字节的jmp，跳转到了trampoline，这蹦床被jmp了，哈哈，所以弹了回去</p>
+<p>4、trampoline跳转到了EasyHook的Thread Deadlock Barrier</p>
+<p>5、EasyHook再用CLR Hosting API跳转到了我们的.NET代码</p>
+<p>转载于<a href="http://www.cnblogs.com/taowen/archive/2008/10/31/1324016.html" target="_blank" rel="external">这里</a><br><br><a href="http://easyhook.github.io/" target="_blank" rel="external">EasyHook地址</a></p>
+<h1 id="2、EasyHook使用"><a href="#2、EasyHook使用" class="headerlink" title="2、EasyHook使用"></a>2、EasyHook使用</h1><p><a href="http://blog.csdn.net/yuzehome/article/details/18450433" target="_blank" rel="external">教程</a></p>
+<h1 id="3、Detour使用"><a href="#3、Detour使用" class="headerlink" title="3、Detour使用"></a>3、Detour使用</h1><p><a href="http://download.csdn.net/download/staver102/7648875" target="_blank" rel="external">下载链接</a></p>
+<h2 id="1、VS编译出错"><a href="#1、VS编译出错" class="headerlink" title="1、VS编译出错"></a>1、VS编译出错</h2><p>c:\evan\workspace\1\1\netwowkippack.h(50) : error C2146: 语法错误 : 缺少“;”(在标识符“nSourPort”的前面)<br>c:\evan\workspace\1\1\netwowkippack.h(50) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int<br>c:\evan\workspace\1\1\netwowkippack.h(50) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int<br>c:\evan\workspace\1\1\netwowkippack.h(51) : error C2146: 语法错误 : 缺少“;”(在标识符“nDestPort”的前面)<br>c:\evan\workspace\1\1\netwowkippack.h(51) : error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int</p>
+<p>总结了一下，主要有以下原因：</p>
+<ol>
+<li><p>（此情况经常出现在大型工程项目中）如果存在两个类的头文件a.h和b.h,在a.h中有这样的语句：#include “b.h”,在b.h文件中有这样的语句：#include “a.h”   且在一个类中有另一个类的对象时   那么就会出现这样的错误。</p>
+</li>
+<li><p>没有包含要定义的类的头文件。</p>
+</li>
+</ol>
+<p>3.项目中少加了宏定义，导致头文件重复定义或相应宏无法识别。</p>
+<p>4.当有多个头文件时，顺序写反也可能导致相关的错误，其根本是头文件中的预编译语句被隐去了。</p>
+<p>e.g</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line"></div><div class="line">#include &lt;Windows.h&gt;</div><div class="line"></div><div class="line">#include &lt;WinCrypt.h&gt;</div><div class="line"></div><div class="line">#include &lt;string.h&gt;</div></pre></td></tr></table></figure>
+<p>如果把第二个和第三个写反，一个宏定义就被#if给注了，就会出现类似错误</p>
+<p><a href="http://mfvan.blog.163.com/blog/static/58895190201023042012727/" target="_blank" rel="external">转载自链接</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/articles/" rel="tag"># articles</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/26/CTF/" rel="next" title="CTF">
+                <i class="fa fa-chevron-left"></i> CTF
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -685,6 +503,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -704,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -796,6 +634,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、Hook原理"><span class="nav-number">1.</span> <span class="nav-text">1、Hook原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、EasyHook使用"><span class="nav-number">2.</span> <span class="nav-text">2、EasyHook使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、Detour使用"><span class="nav-number">3.</span> <span class="nav-text">3、Detour使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、VS编译出错"><span class="nav-number">3.1.</span> <span class="nav-text">1、VS编译出错</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -921,11 +775,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
@@ -944,6 +796,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/06/01/Hook学习/';
+          this.page.identifier = '2017/06/01/Hook学习/';
+          this.page.title = 'Hook学习';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
