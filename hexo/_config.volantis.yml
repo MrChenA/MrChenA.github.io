@@ -1,6 +1,6 @@
 ############################### Volantis ###############################
 info:
-  theme_name: 百思特的濠贝 # This is theme's name.
+  theme_name: Volantis # This is theme's name.
   theme_version: '4.0.0-rc.4' # This is theme's version.
   theme_docs: https://volantis.js.org/ # This is theme's URL.
   theme_repo: https://github.com/volantis-x/hexo-theme-volantis
@@ -52,9 +52,9 @@ cover:
     others: false # can be written in front-matter 'cover: true'
   background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: 'Volantis'
-  subtitle: ''
-  search: A Wonderful Theme for Hexo # search bar placeholder
+  title: '百思特的濠贝'
+  subtitle: '做别人没做过的梦，然被人睡去吧'
+  search: A Wonderful Guy # search bar placeholder
   features:
     - name: 文档
       icon: #
